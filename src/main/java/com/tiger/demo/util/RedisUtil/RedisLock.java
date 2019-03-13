@@ -20,6 +20,8 @@ public class RedisLock {
             }
         } catch (Exception e) {
             e.printStackTrace();
+        } finally {
+            jedis.close();
         }
         return null;
     }
@@ -30,8 +32,7 @@ public class RedisLock {
             Long ttl = jedis.ttl(key);
             System.out.println("ttl:"+ttl);
             if (jedis.get(key).equals(value)){
-                Long del = jedis.del(key);//删除成功
-                System.out.println(del);
+                Long del = jedis.del(key);//删除成功 1
                 return true;
             }
         } catch (Exception e) {

@@ -2,6 +2,7 @@ package com.tiger.demo.controller;
 
 import com.tiger.demo.dao.UserDao;
 import com.tiger.demo.domain.User;
+import com.tiger.demo.serviceimpl.TestServiceImpl;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestParam;
@@ -26,4 +27,5 @@ public class TestController {
         return user;
 
     }
+
 }
