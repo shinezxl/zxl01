@@ -10,16 +10,16 @@ import java.util.Map;
 public class TestMain {
     public static void main(String[] args) {
 
-        Thread thread = new Thread(new Runnable() {
+        /*Thread thread = new Thread(new Runnable() {
             @Override
             public void run() {
 
             }
         });
 
-        thread.start();
+        thread.start();*/
 
-        /*ApplicationContext aop = new ClassPathXmlApplicationContext("bean.xml");
+        ApplicationContext aop = new ClassPathXmlApplicationContext("bean.xml");
         TestServiceImpl bean = aop.getBean(TestServiceImpl.class);
         Map map = new HashMap();
         map.put("name","able");
@@ -27,7 +27,7 @@ public class TestMain {
         map.put("sex","男");
 
         bean.getString1(map);
-        bean.getString2();*/
+        bean.getString2();
 
     }
 }

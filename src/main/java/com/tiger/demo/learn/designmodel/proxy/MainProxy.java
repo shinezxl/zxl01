@@ -1,4 +1,4 @@
-package com.tiger.designmodel.proxy;
+package com.tiger.demo.learn.designmodel.proxy;
 
 import java.lang.reflect.Proxy;
 
