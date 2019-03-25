@@ -3,6 +3,7 @@ package com.tiger.demo.learn.LogRecord;
 import net.sf.json.JSONObject;
 
 import java.io.Serializable;
+import java.math.BigDecimal;
 import java.util.Date;
 
 public class StoreModel implements Serializable{
@@ -12,6 +13,7 @@ public class StoreModel implements Serializable{
     private Date createrTime;
     private Date updateTime;
     private Integer storeLevel;
+    private BigDecimal price;
 
 
 
@@ -53,6 +55,14 @@ public class StoreModel implements Serializable{
 
     public void setUpdateTime(Date updateTime) {
         this.updateTime = updateTime;
+    }
+
+    public BigDecimal getPrice() {
+        return price;
+    }
+
+    public void setPrice(BigDecimal price) {
+        this.price = price;
     }
 
     @Override
