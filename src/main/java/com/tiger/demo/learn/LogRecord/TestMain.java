@@ -4,6 +4,7 @@ import net.sf.json.JSONObject;
 
 import java.math.BigDecimal;
 import java.util.Date;
+import java.util.List;
 
 public class TestMain {
     /**
@@ -19,7 +20,7 @@ public class TestMain {
         originalModel.setStoreCode("zxl");
         originalModel.setStoreName("张三的门店");
         originalModel.setStoreLevel(3);
-        originalModel.setPrice(BigDecimal.valueOf(50.23));
+        originalModel.setPrice(BigDecimal.valueOf(0));
 
         StoreModel newModel = new StoreModel();
         newModel.setCreaterTime(new Date());
@@ -27,11 +28,27 @@ public class TestMain {
         newModel.setStoreCode("zxl");
         newModel.setStoreName("张三的门店改");
         newModel.setStoreLevel(1);
-        newModel.setPrice(BigDecimal.valueOf(36.12));
+        newModel.setPrice(BigDecimal.valueOf(0));
 
-        OperateUtil operateUtil = new OperateUtil();
-        operateUtil.recordOperationInfo(newModel,originalModel,"操作人：李四","操作类型：门店基本信息修改");
+       /* OperateUtil operateUtil = new OperateUtil();
+        operateUtil.recordOperationInfo(newModel,originalModel,"操作人：李四","操作类型：门店基本信息修改");*/
 
+        List<String> list = OperateUtil.objectToJsonstrTwo(originalModel, newModel);
+        System.out.println(list);
+
+        test1();
+    }
+
+    public static void test1(){
+
+        String newStr = "{\"creditLimit\":30000,\"nStoreSavedDeposit\":0}";
+        String oldStr = "{\"creditLimit\":30000,\"nStoreSavedDeposit\":0}";
+
+        JSONObject oldObject = JSONObject.fromObject(oldStr);
+        JSONObject newObject = JSONObject.fromObject(newStr);
+
+        List<String> list = OperateUtil.objectToJsonstrTwo(oldObject, newObject);
+        System.out.println(11);
 
 
     }
