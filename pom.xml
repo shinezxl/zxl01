@@ -72,11 +72,11 @@
 
 
 		<!--json字符串-->
-		<dependency>
+		<!--<dependency>
 			<groupId>com.bs</groupId>
 			<artifactId>bs-Api</artifactId>
 			<version>0.0.1</version>
-		</dependency>
+		</dependency>-->
 		<dependency>
 			<groupId>net.sf.json-lib</groupId>
 			<artifactId>json-lib</artifactId>
