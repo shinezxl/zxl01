@@ -84,6 +84,18 @@
 			<classifier>jdk15</classifier>
 		</dependency>
 
+		<!--rabbitMq-->
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-amqp</artifactId>
+		</dependency>
+<!--		&lt;!&ndash; https://mvnrepository.com/artifact/org.springframework.amqp/spring-rabbit &ndash;&gt;
+		<dependency>
+			<groupId>org.springframework.amqp</groupId>
+			<artifactId>spring-rabbit</artifactId>
+			<version>${spring-rabbit.version}</version>
+		</dependency>-->
+
 	</dependencies>
 
 
