@@ -20,9 +20,9 @@ public class Controller {
         return "succeed";
     }
 
-    @GetMapping("/testMqManyThread")
+   /* @GetMapping("/testMqManyThread")
     public String testMqManyThread(){
         mqProduct.sendManyThread();
         return "succeed";
-    }
+    }*/
 }

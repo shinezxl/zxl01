@@ -15,13 +15,13 @@ public class MqProduct {
     public void send() {
         String context = "hello " + new Date();
         System.out.println("Sender : " + context);
-        this.rabbitTemplate.convertAndSend("hello", context);
+        this.rabbitTemplate.convertAndSend("zxl1", context);
     }
 
     public void sendMany() {
         for (int i = 0; i < 1000; i++) {
             String context = "hello " + i;
-            this.rabbitTemplate.convertAndSend("hello", context);
+            this.rabbitTemplate.convertAndSend("zxl2", context);
         }
     }
 
