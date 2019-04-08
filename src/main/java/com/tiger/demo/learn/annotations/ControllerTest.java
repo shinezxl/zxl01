@@ -19,4 +19,10 @@ public class ControllerTest {
                 ------logInfo end
         ------运行异常 异常信息：/ by zero*/
     }
+
+    @VisitRecord("test")
+    @RequestMapping("/visitRecord")
+    public void visitRecord(){
+        System.out.println("-------cry in the dream--------");
+    }
 }
