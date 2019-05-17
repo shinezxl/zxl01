@@ -19,7 +19,7 @@ public class TestMain {
 
         thread.start();*/
 
-        ApplicationContext aop = new ClassPathXmlApplicationContext("bean.xml");
+       /* ApplicationContext aop = new ClassPathXmlApplicationContext("bean.xml");
         TestServiceImpl bean = aop.getBean(TestServiceImpl.class);
         Map map = new HashMap();
         map.put("name","able");
@@ -27,7 +27,17 @@ public class TestMain {
         map.put("sex","男");
 
         bean.getString1(map);
-        bean.getString2();
+        bean.getString2();*/
+
+       double a = 1;
+
+       Double b = Double.valueOf(1);
+
+       Double c = Double.valueOf(2);
+
+       if (b>0){
+           System.out.println(1);
+       }
 
     }
 }
