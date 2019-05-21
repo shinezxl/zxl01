@@ -11,8 +11,8 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 public class TestController {
 
-    @Autowired
-    private UserDao userDao;
+   /* @Autowired
+    private UserDao userDao;*/
 
     @GetMapping("/testCpu")
     public void testCpu(){
@@ -23,8 +23,9 @@ public class TestController {
 
     @GetMapping("/query")
     public User query(@RequestParam("id") Integer id){
-        User user = userDao.queryUser(id);
-        return user;
+        /*User user = userDao.queryUser(id);
+        return user;*/
+        return null;
 
     }
 

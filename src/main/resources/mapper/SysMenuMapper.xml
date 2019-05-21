@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.tiger.demo.learn.mybatisplus.mapper.SysMenuMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.tiger.demo.learn.mybatisplus.entity.SysMenu">
+        <id column="menu_id" property="menuId" />
+        <result column="parent_id" property="parentId" />
+        <result column="name" property="name" />
+        <result column="url" property="url" />
+        <result column="perms" property="perms" />
+        <result column="type" property="type" />
+        <result column="property" property="property" />
+        <result column="icon" property="icon" />
+        <result column="order_num" property="orderNum" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        menu_id, parent_id, name, url, perms, type, property, icon, order_num
+    </sql>
+    <select id="queryPermsByUserId" resultType="java.lang.String">
+        SELECT mm.perms FROM sys_menu mm
+        LEFT JOIN sys_menu m ON mm.parent_id = m.menu_id
+        LEFT JOIN sys_role_menu rm ON m.menu_id = rm.menu_id
+        LEFT JOIN sys_user_role ur ON ur.role_id = rm.role_id
+        WHERE 1=1
+        AND ur.user_id = #{userId}
+    </select>
+
+</mapper>

@@ -14,9 +14,9 @@ import java.util.List;
 public class CodeGenerator {
 
     //模块名
-    private static String moduleName = "sys";
+    private static String moduleName = "";
     //表名，多个英文逗号分割
-    private static String tableName = "sys_user_token";
+    private static String tableName = "sys_menu";
 
     //包设置
     private static String parent = "com.tiger.demo.learn.mybatisplus";

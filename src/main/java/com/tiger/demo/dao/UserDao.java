@@ -9,7 +9,7 @@ import org.springframework.stereotype.Component;
 @Component
 public interface UserDao {
 
-    @Select("SELECT id,user_name as userName FROM t_user WHERE id = #{id}")
-    User queryUser(Integer id);
+    /*@Select("SELECT id,user_name as userName FROM t_user WHERE id = #{id}")
+    User queryUser(Integer id);*/
 
 }
