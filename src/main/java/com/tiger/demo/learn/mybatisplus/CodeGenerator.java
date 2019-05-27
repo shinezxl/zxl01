@@ -14,15 +14,15 @@ import java.util.List;
 public class CodeGenerator {
 
     //模块名
-    private static String moduleName = "";
+    private static String moduleName = "aop";
     //表名，多个英文逗号分割
-    private static String tableName = "sys_menu";
+    private static String tableName = "receive_detail";
 
     //包设置
-    private static String parent = "com.tiger.demo.learn.mybatisplus";
+    private static String parent = "com.tiger.demo.learn.aopannotation";
 
     //mysql设置
-    private static String url = "jdbc:mysql://localhost:3306/shiro?allowMultiQueries=true&useUnicode=true&characterEncoding=UTF-8&serverTimezone=UTC";
+    private static String url = "jdbc:mysql://localhost:3306/oms_gfs?allowMultiQueries=true&useUnicode=true&characterEncoding=UTF-8&serverTimezone=UTC";
     private static String driverName = "com.mysql.jdbc.Driver";
     private static String userName = "root";
     private static String passWord = "123456";

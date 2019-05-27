@@ -6,7 +6,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 @RestController
 public class Controller {
-    @Autowired
+   /* @Autowired
     MqProduct mqProduct;
     @GetMapping("/testMq")
     public String testMq(){
@@ -18,7 +18,7 @@ public class Controller {
     public String testMqMany(){
         mqProduct.sendMany();
         return "succeed";
-    }
+    }*/
 
    /* @GetMapping("/testMqManyThread")
     public String testMqManyThread(){

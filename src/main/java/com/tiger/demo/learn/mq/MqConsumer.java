@@ -9,7 +9,7 @@ import static com.tiger.demo.learn.mq.RabbitConfig.QUEUE_TWO;
 
 @Component
 public class MqConsumer {
-    @RabbitListener(queues=QUEUE_TWO)
+    /*@RabbitListener(queues=QUEUE_TWO)
     @RabbitHandler
     public void process(String hello) {
         System.out.println("Receiver  : " + hello);
@@ -24,5 +24,5 @@ public class MqConsumer {
     @RabbitHandler
     public void process2(String hello) {
         System.out.println("Receiver2  : " + hello);
-    }
+    }*/
 }

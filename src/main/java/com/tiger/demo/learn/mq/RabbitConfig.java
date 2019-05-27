@@ -14,7 +14,7 @@ public class RabbitConfig {
      * MQ
      * @return
      */
-    @Bean
+    /*@Bean
     public Queue zxl1Queue() {
         return new Queue(QUEUE_ONE);
     }
@@ -22,7 +22,7 @@ public class RabbitConfig {
     @Bean
     public Queue zxl2Queue() {
         return new Queue(QUEUE_TWO);
-    }
+    }*/
 
 
 

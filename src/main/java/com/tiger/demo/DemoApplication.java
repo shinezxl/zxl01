@@ -5,7 +5,7 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication()
-@MapperScan("com.tiger.demo.learn.mybatisplus.mapper")
+@MapperScan({"com.tiger.demo.learn.mybatisplus.mapper","com.tiger.demo.learn.aopannotation.aop.mapper"})
 public class DemoApplication {
 
 	public static void main(String[] args) {
