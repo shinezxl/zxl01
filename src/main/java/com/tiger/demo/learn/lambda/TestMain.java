@@ -202,6 +202,12 @@ public class TestMain {
         System.out.println("所有数字的平均值 : " + stats.getAverage());
     }
 
+    /*public static void learn7(){
+        PackEntity inputPack = packList.stream()
+                .filter((p) -> (p.getUnitDictionaryId() == unitDictionaryId.intValue()))
+                .findFirst().get();
+    }*/
+
 
     public static void main(String[] args) {
 //        learn1();

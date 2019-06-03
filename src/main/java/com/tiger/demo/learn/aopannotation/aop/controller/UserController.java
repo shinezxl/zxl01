@@ -1,9 +1,15 @@
 package com.tiger.demo.learn.aopannotation.aop.controller;
 
 
+import com.tiger.demo.learn.aopannotation.aop.service.IUserService;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 
+import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
+
+import java.security.Key;
 
 /**
  * <p>
@@ -16,6 +22,14 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 @RequestMapping("/aop/user")
 public class UserController {
+    @Autowired
+    IUserService iUserService;
+
+    @GetMapping("/test")
+    public String test(@RequestParam(value = "key",required = false) String key){
+        iUserService.test(key);
+        return "success";
+    }
 
 }
 

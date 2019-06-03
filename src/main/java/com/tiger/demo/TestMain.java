@@ -40,12 +40,22 @@ public class TestMain {
            System.out.println(1);
        }*/
 
-        System.out.println("---------start---------");
+        /*System.out.println("---------start---------");
         Thread.sleep(1000*10);
         User user = new User();
         System.out.println(user.getUserName());
 
-        System.out.println("---------end---------");
+        System.out.println("---------end---------");*/
+
+        User user = new User();
+        User user1 = new User();
+        user.setUserName("zxl");
+        user1.setUserName(user.getUserName());
+//        String s1 = user.getUserName();
+        user.setUserName("ml");
+
+        System.out.println(user1.getUserName());
+
 
     }
 }

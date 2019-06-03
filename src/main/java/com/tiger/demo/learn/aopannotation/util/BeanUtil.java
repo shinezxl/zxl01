@@ -48,11 +48,11 @@ public class BeanUtil implements ApplicationContextAware {
 
             Field targetFiled = null;
             boolean needInnerField = StringUtils.isNotEmpty(sv.targetFiled());
-
+            //获取key,存到缓存中
             String keyPrefix = sv.beanClass() + "-" + sv.method() + "-" + sv.targetFiled() + "-";
-
+            //遍历list对象
             for(Object obj : co1){
-                Object paramValue = paramField.get(obj);
+                Object paramValue = paramField.get(obj);//获得这个字段的值
                 if (paramValue == null){
                     continue;
                 }

@@ -35,5 +35,11 @@ private static final long serialVersionUID=1L;
      */
     private String userName;
 
+    /**
+     * 年龄
+     */
+    private String userAge;
+
+
 
 }
