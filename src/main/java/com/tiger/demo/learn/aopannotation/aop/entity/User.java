@@ -40,6 +40,11 @@ private static final long serialVersionUID=1L;
      */
     private String userAge;
 
+    /**
+     * 校名
+     */
+    private String schoolName;
+
 
 
 }

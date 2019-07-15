@@ -1,15 +1,23 @@
 package com.tiger.demo;
 
 import com.tiger.demo.domain.Testfanshen;
+import com.tiger.demo.learn.emil.MailBean;
+import com.tiger.demo.learn.emil.TestMail;
 import org.junit.Test;
+import org.junit.runner.RunWith;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.boot.test.context.SpringBootTest;
+import org.springframework.test.context.junit4.SpringRunner;
 
 import java.lang.reflect.Field;
-import java.util.ArrayList;
 import java.util.HashMap;
-import java.util.List;
 import java.util.Map;
+@RunWith(SpringRunner.class)
+@SpringBootTest(classes={DemoApplication.class})// 指定启动类
+public class MainTest{
 
-public class MainTest {
+    @Autowired
+    TestMail testMail;
 
     public static boolean a =true;
     public static int i =0;
@@ -39,6 +47,14 @@ public class MainTest {
 
 
 
+
+    }
+
+    @Test
+    public void test11(){
+        MailBean mailBean = new MailBean("yxue@gfscold.com","主题","test");
+
+        testMail.sendSimpleMail(mailBean);
 
     }
 

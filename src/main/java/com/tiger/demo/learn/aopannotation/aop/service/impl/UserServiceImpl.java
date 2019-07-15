@@ -24,16 +24,16 @@ public class UserServiceImpl extends ServiceImpl<UserMapper, User> implements IU
     public void test(String key) {
 
         try {
-            boolean b = AopConstant.map.containsKey(key);
+           /* boolean b = AopConstant.map.containsKey(key);
             if (b){
                 System.out.println("存在");
                 return;
             }else {
                 AopConstant.map.put(key,null);
-            }
+            }*/
             Thread.sleep(1000);
             userMapper.test();
-            AopConstant.map.remove(key);
+//            AopConstant.map.remove(key);
         } catch (Exception e) {
             if (AopConstant.map.containsKey(key)){
                 AopConstant.map.remove(key);
