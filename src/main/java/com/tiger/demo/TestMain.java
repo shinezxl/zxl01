@@ -135,7 +135,14 @@ public class TestMain {
 
         String aaa = "aAgg";
 
+        String zxl = new String("zxl");
+        System.out.println(zxl);
         System.out.println(aaa.toUpperCase());
+
+
+        String a1 ="Able";
+        String s = firstWorldToUp(a1);
+        System.out.println(s);
 
 
     }
@@ -152,4 +159,12 @@ public class TestMain {
     private static void test1(int a) {
         a++;
     }
+
+    private static String firstWorldToUp(String a) {
+        byte[] bytes = a.getBytes();
+        bytes[0]+=32;
+        return new String(bytes);
+    }
+
+
 }
