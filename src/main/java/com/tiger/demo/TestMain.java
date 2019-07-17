@@ -1,17 +1,8 @@
 package com.tiger.demo;
 
 import com.tiger.demo.domain.User;
-import com.tiger.demo.serviceimpl.TestServiceImpl;
-import net.sf.json.JSONArray;
-import net.sf.json.JSONObject;
-import org.springframework.context.ApplicationContext;
-import org.springframework.context.support.ClassPathXmlApplicationContext;
 
 import java.math.BigDecimal;
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
 
 public class TestMain {
     public static void main(String[] args) throws Exception{
@@ -143,6 +134,9 @@ public class TestMain {
         String a1 ="Able";
         String s = firstWorldToUp(a1);
         System.out.println(s);
+
+        String test1 = "第一次";
+
 
 
     }
