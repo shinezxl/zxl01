@@ -136,6 +136,7 @@ public class TestMain {
         System.out.println(s);
 
         String test1 = "第一次";
+        String test2 = "第二次";
 
 
 
