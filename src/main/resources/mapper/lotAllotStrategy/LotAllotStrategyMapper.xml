@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.tiger.demo.learn.newFile.lotAllotStrategy.mapper.LotAllotStrategyMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.tiger.demo.learn.newFile.lotAllotStrategy.entity.LotAllotStrategy">
+    <result column="id" property="id" />
+        <result column="lot_attribute_id" property="lotAttributeId" />
+        <result column="lot_attribute_column_name" property="lotAttributeColumnName" />
+        <result column="allot_priority" property="allotPriority" />
+        <result column="allot_sort" property="allotSort" />
+        <result column="operators" property="operators" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        id,
+        lot_attribute_id, lot_attribute_column_name, allot_priority, allot_sort, operators
+    </sql>
+
+</mapper>

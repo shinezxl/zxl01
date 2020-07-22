@@ -2,7 +2,6 @@ package com.tiger.demo;
 
 import com.tiger.demo.domain.Testfanshen;
 import com.tiger.demo.learn.emil.MailBean;
-import com.tiger.demo.learn.emil.TestMail;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -16,7 +15,7 @@ import java.util.Map;
 @SpringBootTest(classes={DemoApplication.class})// 指定启动类
 public class MainTest{
 
-    @Autowired
+   /* @Autowired
     TestMail testMail;
 
     public static boolean a =true;
@@ -97,6 +96,6 @@ public class MainTest{
         System.out.println(map.toString());
         return null;
     }
-
+*/
 
 }

@@ -1,9 +1,13 @@
 package com.tiger.demo.learn.unit;
 
+import org.apache.commons.collections.CollectionUtils;
 import org.apache.commons.collections.MapUtils;
 import org.apache.commons.lang.StringUtils;
 
+import javax.validation.constraints.Max;
+import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.List;
 import java.util.Map;
 import java.util.concurrent.TimeUnit;
 
@@ -41,6 +45,19 @@ public class CommonUtils {
             System.out.println("testMap is empty");
         }else {
             System.out.println("testMap is not empty");
+        }
+
+        List<Integer> inList = new ArrayList<>();
+//        inList.add(1);
+        if (CollectionUtils.isNotEmpty(inList)){
+            System.out.println(111111);
+        }
+
+
+        Integer zxl1 = 9999;
+        int zxl2 = 9999;
+        if (zxl1.equals(zxl2)){
+            System.out.println(23333);
         }
 
 

@@ -15,4 +15,8 @@ public interface IUserService extends IService<User> {
 
     void test(String key);
 
+    void test2(String key);
+
+    void test3(String key);
+
 }

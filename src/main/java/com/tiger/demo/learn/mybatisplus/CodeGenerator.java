@@ -14,18 +14,18 @@ import java.util.List;
 public class CodeGenerator {
 
     //模块名
-    private static String moduleName = "aop";
+    private static String moduleName = "orderBusinessEventMqRecord";
     //表名，多个英文逗号分割
-    private static String tableName = "receive_detail";
+    private static String tableName = "order_business_event_mq_record";
 
     //包设置
-    private static String parent = "com.tiger.demo.learn.aopannotation";
+    private static String parent = "com.tiger.demo.learn.newFile";
 
     //mysql设置
-    private static String url = "jdbc:mysql://localhost:3306/oms_gfs?allowMultiQueries=true&useUnicode=true&characterEncoding=UTF-8&serverTimezone=UTC";
+    private static String url = "jdbc:mysql://10.10.1.17:3306/oms_gfs?allowMultiQueries=true&useUnicode=true&characterEncoding=UTF-8&serverTimezone=UTC";
     private static String driverName = "com.mysql.jdbc.Driver";
     private static String userName = "root";
-    private static String passWord = "123456";
+    private static String passWord = "gfscold@mysql$!2019";
 
     //抽象类设置
     private static String superEntityClass = null;
@@ -128,7 +128,7 @@ public class CodeGenerator {
         strategy.setRestControllerStyle(true);
         strategy.setSuperControllerClass(superControllerClass);
         strategy.setInclude(tableName.split(","));//表名，多个英文逗号分割
-        strategy.setSuperEntityColumns("p_id");
+        strategy.setSuperEntityColumns("id");
         strategy.setControllerMappingHyphenStyle(true);
         strategy.setTablePrefix(pc.getModuleName() + "_");
         mpg.setStrategy(strategy);

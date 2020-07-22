@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.tiger.demo.learn.newFile.takeAddress.mapper.UnimallTakeAddressTimeMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.tiger.demo.learn.newFile.takeAddress.entity.UnimallTakeAddressTime">
+    <result column="id" property="id" />
+        <result column="unimall_take_address_id" property="unimallTakeAddressId" />
+        <result column="time_range" property="timeRange" />
+        <result column="max_take_limit" property="maxTakeLimit" />
+        <result column="gmt_create" property="gmtCreate" />
+        <result column="gmt_create_by" property="gmtCreateBy" />
+        <result column="gmt_update" property="gmtUpdate" />
+        <result column="gmt_update_by" property="gmtUpdateBy" />
+        <result column="STATUS" property="status" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        id,
+        unimall_take_address_id, time_range, max_take_limit, gmt_create, gmt_create_by, gmt_update, gmt_update_by, STATUS
+    </sql>
+
+</mapper>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.tiger.demo.learn.newFile.takeAddress.mapper.UnimallTakeAddressMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.tiger.demo.learn.newFile.takeAddress.entity.UnimallTakeAddress">
+    <result column="id" property="id" />
+        <result column="from_province_code" property="fromProvinceCode" />
+        <result column="from_province" property="fromProvince" />
+        <result column="from_city_code" property="fromCityCode" />
+        <result column="from_city" property="fromCity" />
+        <result column="from_area_code" property="fromAreaCode" />
+        <result column="from_area" property="fromArea" />
+        <result column="from_detailed_address" property="fromDetailedAddress" />
+        <result column="from_longitude" property="fromLongitude" />
+        <result column="from_latitude" property="fromLatitude" />
+        <result column="from_link_man" property="fromLinkMan" />
+        <result column="from_link_man_phone" property="fromLinkManPhone" />
+        <result column="gmt_create" property="gmtCreate" />
+        <result column="gmt_update" property="gmtUpdate" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        id,
+        from_province_code, from_province, from_city_code, from_city, from_area_code, from_area, from_detailed_address, from_longitude, from_latitude, from_link_man, from_link_man_phone, gmt_create, gmt_update
+    </sql>
+
+</mapper>

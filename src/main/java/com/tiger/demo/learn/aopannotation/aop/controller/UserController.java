@@ -26,8 +26,20 @@ public class UserController {
     IUserService iUserService;
 
     @GetMapping("/test")
-    public String test(@RequestParam(value = "key",required = false) String key){
+    public synchronized String test(@RequestParam(value = "key",required = false) String key){
         iUserService.test(key);
+        return "success";
+    }
+
+    @GetMapping("/test2")
+    public String test2(@RequestParam(value = "key",required = false) String key){
+        iUserService.test2(key);
+        return "success";
+    }
+
+    @GetMapping("/test3")
+    public String test3(@RequestParam(value = "key",required = false) String key){
+        iUserService.test3(key);
         return "success";
     }
 

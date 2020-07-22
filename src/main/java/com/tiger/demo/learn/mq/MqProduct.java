@@ -9,7 +9,7 @@ import java.util.Date;
 @Component
 public class MqProduct {
 
-    /*@Autowired
+    @Autowired
     private AmqpTemplate rabbitTemplate;
 
     public void send() {
@@ -23,7 +23,7 @@ public class MqProduct {
             String context = "hello " + i;
             this.rabbitTemplate.convertAndSend("zxl2", context);
         }
-    }*/
+    }
 
 
 
